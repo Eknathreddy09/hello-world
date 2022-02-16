@@ -7,5 +7,5 @@ azportallogin=$(az login --service-principal -u c35f2d8b-1e51-4aba-ac3e-f9135baf
 vmcreate=$(az vm create -g jumpbox-RG -n vmfromtemplatecli --image /subscriptions/827ba431-f0b2-4e6b-aa9b-45d645395244/resourceGroups/jumpbox-RG/providers/Microsoft.Compute/images/partner-template-image-20220216135626 --size Standard_DS2_v2 --ssh-key-values id_rsa.pub)
 vmip=$(az vm list-ip-addresses --resource-group jumpbox-RG --name vmfromtemplatecli --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" --output tsv)
 az vm open-port --resource-group jumpbox-RG --name vmfromtemplatecli --port 8080
-echo "Connect to public ip: $vmip to create management cluster in Terminal 2"
+echo "Connect to public ip: $vmip to create management cluster"
 echo "$vmip"
