@@ -1,0 +1,66 @@
+#! ---------------------------------------------------------------------
+#! Cluster creation basic configuration
+#! ---------------------------------------------------------------------
+
+# CLUSTER_NAME:
+CLUSTER_PLAN: dev
+NAMESPACE: default
+CNI: antrea
+IDENTITY_MANAGEMENT_TYPE: none
+
+#! ---------------------------------------------------------------------
+#! Node configuration
+#! ---------------------------------------------------------------------
+
+CONTROL_PLANE_MACHINE_COUNT: 1
+WORKER_MACHINE_COUNT: 1
+AZURE_CONTROL_PLANE_MACHINE_TYPE: "Standard_D2as_v4"
+AZURE_NODE_MACHINE_TYPE: "Standard_D2as_v4"
+
+#! ---------------------------------------------------------------------
+#! Azure Configuration
+#! ---------------------------------------------------------------------
+
+AZURE_ENVIRONMENT: "AzurePublicCloud"
+AZURE_TENANT_ID: b39138ca-3cee-4b4a-a4d6-cd83d9dd62f0
+AZURE_SUBSCRIPTION_ID: 827ba431-f0b2-4e6b-aa9b-45d645395244
+AZURE_CLIENT_ID: c35f2d8b-1e51-4aba-ac3e-f9135baf97c1
+AZURE_CLIENT_SECRET: 
+AZURE_LOCATION: centralindia
+AZURE_SSH_PUBLIC_KEY_B64: c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCZ1FDNWNMYkoybElTcW12Qk84R2FGWjhGaUFkWU5Dd0NHZTZrS0xGb0pxczhoTjE0SUtPZi9xVkRndkNPbmRPamUxY2VjLzFZNEJpbzU3WkIyV0NuWHhKQkJGcGdLaXAwY2Rpa2c2eFc2MzhjY2FmVkNBcUp0WE1ZR2ZURkxZYVpSeUNFemNIdUllQlRNTnM2Z2hSamxLTXpWdHN3THFuVVM5UGNiZWN3MVpjVjdqbGRzYUZvZDkrRFNpNjVxb0tSYUFiUEQ0ZTZ6V2lMcFRHRjRqbiswSXZyN1FORkRjenl4OGJPR1A1ODVOYU5kWWNnUmtKSXArN1VzQWt6N2FYREw1dElYUSt2a2oySWhqY2ptSGdCcVVZNEJaVXhCVWdZek9mYm44QThpK05vWTU4dkNKdmFDNWlPVDhwMmh4aHJFY0FxU0h0R2tFNy9wZldZNWIxSGJNdUtQUjc2dGYyK2V2UHdCNlhybzczbk1maDRSK2VTQnljN212dkZKcmpCOEN0MUxuemdDdVp4RHlNd2U4ak5tQktLZFNvQklJTzhYLys5TmJ1K1BaYWNCeUdvV3g5dEFZSFJQUGhldDRwZGt0WkRqTU82dm1JQVlNK0hOOFM5NGJPNFlPMGI2cmZEbE84cnlwYmJjNkRuMjFieFpLalpRTUxWYnVkaXpweTBCS3M9IGVrbmF0aAo= 
+
+#! ---------------------------------------------------------------------
+#! Machine Health Check configuration
+#! ---------------------------------------------------------------------
+
+ENABLE_MHC:
+ENABLE_MHC_CONTROL_PLANE: true
+ENABLE_MHC_WORKER_NODE: true
+MHC_UNKNOWN_STATUS_TIMEOUT: 5m
+MHC_FALSE_STATUS_TIMEOUT: 12m
+MACHINE_HEALTH_CHECK_ENABLED: "true"
+
+#! ---------------------------------------------------------------------
+#! Common configuration
+#! ---------------------------------------------------------------------
+
+ENABLE_AUDIT_LOGGING: true
+ENABLE_DEFAULT_STORAGE_CLASS: true
+CLUSTER_CIDR: 100.96.0.0/11
+SERVICE_CIDR: 100.64.0.0/13
+
+#! ---------------------------------------------------------------------
+#! Autoscaler configuration
+#! ---------------------------------------------------------------------
+
+ENABLE_AUTOSCALER: false
+
+#! ---------------------------------------------------------------------
+#! Antrea CNI configuration
+#! ---------------------------------------------------------------------
+
+# ANTREA_NO_SNAT: false
+# ANTREA_TRAFFIC_ENCAP_MODE: "encap"
+# ANTREA_PROXY: false
+# ANTREA_POLICY: true
+# ANTREA_TRACEFLOW: false
