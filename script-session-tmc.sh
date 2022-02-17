@@ -5,3 +5,4 @@ clustername=$(kubectl config view -o jsonpath={.contexts[0].context.cluster})
 tanzu login --kubeconfig ~/.kube/config --context $username@$clustername --name $clustername
 kubectl config set-context $username@$clustername
 kubectl config use-context $username@$clustername
+sed -i -r "s/harborurl/$SESSION_NAME/g" ~/harbor.yaml
