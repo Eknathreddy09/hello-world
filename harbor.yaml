@@ -1,0 +1,109 @@
+core:
+  replicas: 1
+  secret: VMware1!VMware1!
+  xsrfKey: VMware1!VMware1!VMware1!VMware1!
+database:
+  password: VMware1!VMware1!
+harborAdminPassword: Newstart@1
+hostname: harborreplace.captainvirtualization.in
+jobservice:
+  replicas: 1
+  secret: VMware1!VMware1!
+notary:
+  enabled: true
+registry:
+  replicas: 1
+  secret: VMware1!
+secretKey: VMware1!VMware1!
+tlsCertificate:
+  tls.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIFNzCCBB+gAwIBAgISBJLY6FazFq0MlqeuTuBwsx9IMA0GCSqGSIb3DQEBCwUA
+    MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+    EwJSMzAeFw0yMjAyMDQwNTE3NDhaFw0yMjA1MDUwNTE3NDdaMCMxITAfBgNVBAMT
+    GGNhcHRhaW52aXJ0dWFsaXphdGlvbi5pbjCCASIwDQYJKoZIhvcNAQEBBQADggEP
+    ADCCAQoCggEBAJSXqrt6UYuwBkK5g6CgveBpwmz4TyZaClkDtbSDNkuAU1sIvGbY
+    gxDLIQ2WtTsjLLz/gEaJGr5sAlhlx4kiTE9/zkSH5z5r0wrJXJ+dipwZNRsBUmBv
+    Ih3P3vPn/IJLkgIolI1LNLj1+1Cvw9kkTM4tZJ8QpFG5DhOz3iPIk2dTeZBKON3g
+    FEYOX+Ajzl2IsyoBdzuC8SBWahkbqoyyyN4ZgN+L5zCp/g+eUFYKS5UvSCnaIRjY
+    bdSjZcNZ6PS5MuVdaGM/JEiq4iI/+DVf+14hMv9dV+VQ8ka0Odirg0Q1IYQfv6Yf
+    0dSYMmvb5uJBttDD/lrS0JOV3rLq/J+5tYkCAwEAAaOCAlQwggJQMA4GA1UdDwEB
+    /wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/
+    BAIwADAdBgNVHQ4EFgQUFAXfmiBegR61AvrEueJlY1b4HigwHwYDVR0jBBgwFoAU
+    FC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzAB
+    hhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5p
+    LmxlbmNyLm9yZy8wIwYDVR0RBBwwGoIYY2FwdGFpbnZpcnR1YWxpemF0aW9uLmlu
+    MEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUH
+    AgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBBQYKKwYBBAHWeQIEAgSB
+    9gSB8wDxAHYA36Veq2iCTx9sre64X04+WurNohKkal6OOxLAIERcKnMAAAF+w2G5
+    RQAABAMARzBFAiEAtyzE/X4Cq7Y1noPX2D7vojqXgrKk1xfwaUTIX1v90H4CIEQV
+    rwI9bIENZdsVtOvTEikr66HOE+5sP4uKFgTX/EuKAHcAKXm+8J45OSHwVnOfY6V3
+    5b5XfZxgCvj5TV0mXCVdx4QAAAF+w2G5NQAABAMASDBGAiEApR0WSjNiz7Td5LHm
+    PdQQ7YXrMnCzDre1rRz7jtHj4goCIQC8x7U0ti/JegAzAWGIzBe4b95a04Gf28EC
+    E3/0HzFQfzANBgkqhkiG9w0BAQsFAAOCAQEAn9wWdqhXgZIuq75NBlXSR37DiUhi
+    IvLiqPKj8Aa6HpQ9qKUTAZGTxVrTWMMt7WxAwwr6teXVOzDjybFnH+bQjYeZf73o
+    57tpxC7zXMl//kixWBzJcFXN9QsBJCY8a+U8gEuqT5lwATBNZly8XjOgAcY/vaGN
+    AgMchY7XdFMvNcWFkbMJ8Rthr6jEp7+N+/Z53JQWFqvRqAgx1tRZDyi75Mf6wvvE
+    F5rh0XrXcF3um6WFbIG6tofo4RCKMGr5ghiRasVFI93V95aWiYtZFTtY1kg4hY+S
+    JsVBusyZH15fuj3PdepiygRyxBYoSreHRo/Q20gYAXq5lX/ZLFVAR1PsJQ==
+    -----END CERTIFICATE-----
+  tls.key: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCUl6q7elGLsAZC
+    uYOgoL3gacJs+E8mWgpZA7W0gzZLgFNbCLxm2IMQyyENlrU7Iyy8/4BGiRq+bAJY
+    ZceJIkxPf85Eh+c+a9MKyVyfnYqcGTUbAVJgbyIdz97z5/yCS5ICKJSNSzS49ftQ
+    r8PZJEzOLWSfEKRRuQ4Ts94jyJNnU3mQSjjd4BRGDl/gI85diLMqAXc7gvEgVmoZ
+    G6qMssjeGYDfi+cwqf4PnlBWCkuVL0gp2iEY2G3Uo2XDWej0uTLlXWhjPyRIquIi
+    P/g1X/teITL/XVflUPJGtDnYq4NENSGEH7+mH9HUmDJr2+biQbbQw/5a0tCTld6y
+    6vyfubWJAgMBAAECggEAUs1RbrdyyYyFcJlAKDpqlKtalK6qLIzwRzox/y0/DEOu
+    L4RmuEjegHUxLglVZGbtf0RBjwzHwmUdyXSuBFUAgSyPHNE+oyIisFgVLTz1CJdj
+    aHEMHoDPWh2D+BbGNzU1X86NOU83SfqI2SWY1V/NDPduotT7PC8LER+iIf6bZW/d
+    ZL5cBaZwtbEJxIJclzVLXGJ6uK+G5WnbKE9qDt7/zcH4jz0CLmtI0aVImVHIN+wV
+    U9xZDDv4Y/RboWkFYGfsC1sUA4rUeBMvMDPCYuCFQuh7DCFATBUEA6iRVxSh2maP
+    7GeV/4N7KiGOXdlzl8fMDGX1EwvotTcfPNXYKPQBIQKBgQDE6LO1N0hp0LOeu9tS
+    t1jzPo0sGj2P28630q98fqPclpYmXNOdKRui6Com9tOAJp4OloPQp36A4BOUMLh0
+    eVmWUEA4eySmPr/M6fp5ZQVDOa5bLUdpghbvOICKK49NqZQc51sgNCw8Qu8qr4EG
+    9Mx0H9F5WvdNS7EYqUCM+i4/LwKBgQDBLxqv0BLTl2HS/fPL1LgA2OhFVOdlC+KY
+    ocHLtGF693njVaZHJT1T1E1W3Jb1iQGgT/mGf6wa1A8Qgkd0+gS7kjQ9bmujbEh1
+    mHts0ncJxOfzNfzx8HO3Zn513ILTwNDWRTt+QLQyRSK3xX9CgW0oh29XO2gFJs7t
+    fVIiCrzoxwKBgFl3ZZeTy7oQUlxv/GHj3m1+4UPFlG0VsSICfytwmuEyJny9toR0
+    1hK5q9VSVpymbzAvoSqfv7Gsnhi53kVFkbfjNJq1ENzcK+dd9ClOBgsaXSceNpEw
+    w1zj7jtZOV5PC3XqhJPoQKUMwIBDh7tyZKbqghHCjBS5rHiJBkRHs9WPAoGANWCK
+    gyF+0i/1u5Knlh5EaReFtgJrnSPXjEzFez9v38YZS5MSyn2joFH8vI9etqEQbfcq
+    /tqv9wm4z9rvW4bpX9pZzM+BtjnpG3TyRXMxqOVbIXw9U6wYjQgo0PAIxfF0wn+G
+    nK/MGke3/Ab5zqpsOtKRFQ05BJNggYYq93T4FWkCgYEAu52CTWi5R9hyrVw5VAWo
+    kKP3wHMUGo3Rryw4ERzZNmZ+wh+T8a97QG+4ZKOS6KDRy8oWeb+sHvPJfTtoS5c0
+    bvu2FIuWwSbBsgyGGsoNJqxIbMrNtgchZvLZO6U417zgqvwtI9Mxzi4aZLAPFkHu
+    ThxlOx5Ogye89N6LNx0qwvg=
+    -----END PRIVATE KEY-----
+trivy:
+  enabled: true
+  replicas: 1
+persistence:
+    persistentVolumeClaim:
+      registry:
+        storageClass: ""
+        accessMode: ReadWriteOnce
+        size: 10Gi
+      jobservice:
+        storageClass: ""
+        accessMode: ReadWriteOnce
+        size: 1Gi
+      database:
+        storageClass: ""
+        accessMode: ReadWriteOnce
+        size: 1Gi
+      redis:
+        storageClass: ""
+        accessMode: ReadWriteOnce
+        size: 1Gi
+      trivy:
+        storageClass: ""
+        accessMode: ReadWriteOnce
+        size: 5Gi
+    imageChartStorage:
+      azure:
+        accountkey: dEIxNFZ6eVBGUkNhc1RHMlFLbkN2Tnp3T1JtRzdDTEFVb1VXVEwrZDNKMXpSUDhJMlUrM2ZVOUxHWTNtVDNxUWVzRkNlTkxLajh0emZoNEFLYzFYWWc9PQo=
+        accountname: harborregistry
+        container: harborcontainer
+        realm: core.windows.net
