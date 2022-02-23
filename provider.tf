@@ -11,8 +11,8 @@ terraform {
 
 // Basic details needed to configure Tanzu Mission Control provider
 provider "tanzu-mission-control" {
-  endpoint            = "partnertanzuseamericas.tmc.cloud.vmware.com" // Required, environment variable: TMC_ENDPOINT
-  vmw_cloud_api_token = "09dG7PwP1SazHfc7ElXljAT8GcbQfnDjGI7Y14ZlOvBb1qRRBfabHQ052evxxqtl"             // Required, environment variable: VMW_CLOUD_API_TOKEN
+  endpoint            = "<org name>.tmc.cloud.vmware.com" // Required, provide the org name 
+  vmw_cloud_api_token = "<APi Token>"             // Required, provide the API Token
 }
 
 variable "SESSION_NAMESPACE" {}
