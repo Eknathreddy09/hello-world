@@ -10,7 +10,7 @@ vmcreate=$(az vm create -g $SESSION_NAME-JB -n $SESSION_NAME --image /subscripti
 VMIPs=$(az vm list-ip-addresses --resource-group $SESSION_NAME-JB --name $SESSION_NAME --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" --output tsv)
 export VMIP=$VMIPs
 az vm open-port --resource-group $SESSION_NAME-JB --name $SESSION_NAME --port 8080
-echo "Connect to public ip: $VMIP to create management cluster in Terminal 2"
-echo "####################"
-echo "$VMIP"
-echo "####################"
+#echo "Connect to public ip: $VMIP to create management cluster in Terminal 2"
+#echo "####################"
+#echo "$VMIP"
+#echo "####################"
