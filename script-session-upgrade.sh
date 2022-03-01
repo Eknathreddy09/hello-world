@@ -32,6 +32,7 @@ sudo mv ./ytt-linux-amd64-v0.35.1+vmware.1 /usr/local/bin/ytt
 sudo mv ./kapp-linux-amd64-v0.42.0+vmware.1 /usr/local/bin/kapp
 sudo mv ./kbld-linux-amd64-v0.31.0+vmware.1 /usr/local/bin/kbld
 sudo mv ./imgpkg-linux-amd64-v0.18.0+vmware.1 /usr/local/bin/imgpkg
+sed -i -r "s/data.values.AZURE_CLIENT_SECRET/"'"Zye7Q~7KNII0enBhf2QFtuKI6WmdA64DKl.M3"'"/g" "/home/azureuser/.config/tanzu/tkg/providers/infrastructure-azure/v1.0.1/ytt/overlay.yaml"
 echo "################# Verify Tanzu CLI version ###################"
 tanzu version
 echo "################# Verify Kubectl version ###################"
