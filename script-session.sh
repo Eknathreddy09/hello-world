@@ -9,6 +9,7 @@ azgroupcreate=$(az group create -l centralindia -n $SESSION_NAME-JB)
 vmcreate=$(az vm create -g $SESSION_NAME-JB -n $SESSION_NAME --image /subscriptions/827ba431-f0b2-4e6b-aa9b-45d645395244/resourceGroups/images-rg/providers/Microsoft.Compute/images/test-image-image-20220222162601 --size Standard_DS2_v2 --public-ip-address-dns-name $SESSION_NAME --ssh-key-values id_rsa.pub)
 VMIPs=$(az vm list-ip-addresses --resource-group $SESSION_NAME-JB --name $SESSION_NAME --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" --output tsv)
 export VMIP=$VMIPs
+export TANZU_CLI_PINNIPED_AUTH_LOGIN_SKIP_BROWSER=true
 az vm open-port --resource-group $SESSION_NAME-JB --name $SESSION_NAME --port 8080
 #echo "Connect to public ip: $VMIP to create management cluster in Terminal 2"
 #echo "####################"
