@@ -11,6 +11,7 @@ VMIPs=$(az vm list-ip-addresses --resource-group $SESSION_NAME-JB --name $SESSIO
 export VMIP=$VMIPs
 export TANZU_CLI_PINNIPED_AUTH_LOGIN_SKIP_BROWSER=true
 az vm open-port --resource-group $SESSION_NAME-JB --name $SESSION_NAME --port 8080
+sed -i -r "s/harborurl/$SESSION_NAME/g" ~/harbor.yaml
 #echo "Connect to public ip: $VMIP to create management cluster in Terminal 2"
 #echo "####################"
 #echo "$VMIP"
